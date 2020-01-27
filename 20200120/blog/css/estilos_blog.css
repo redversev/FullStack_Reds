@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.header{
+    position: fixed;
+    width: 100%; 
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.header .menu div{
+    padding: 5px;
+}
+.header .ct{
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .desktop{
+    display: flex;
+}
+.contenido{
+    padding: 35px 20px 0;
+    margin: auto;
+    max-width: 1200px;
+}
+.contenedor_grid{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(6, 200px) / repeat(3, auto); 
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px); */
+    grid-template-areas: 
+            "art1 art1 art2" 
+            "art1 art1 art3"
+            "art4 art5 art7"
+            "art6 art8 art7"
+            "art9 art9 art10"
+            "art11 art11 art11";    
+}
+.box{
+    background-color: lightblue;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+}
+.box_1{
+    grid-area: art1;
+}
+.box_3{
+    grid-area: art3;
+}
+.box_7{
+    grid-area: art7;
+}
+.box_9{
+    grid-area: art9;
+}
+.box_11{
+    grid-area: art11;
+}
+.box:hover{
+    box-shadow: 0px 0px 2px 5px lightgrey;
+}
+.footer{
+    color: white;
+    background-color: purple;
+    padding: 5px 20px;
+}
+.footer .ct{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .mobile{
+        display: block;
+    }
+    .header .desktop{
+        display: none;
+    }
+    .contenido{
+        transition: .5s all ease;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .contenedor_grid{ 
+        grid-template: repeat(8, 200px) / repeat(2, auto); 
+        grid-template-areas: 
+        "art1 art1"
+        "art2 art3" 
+        "art4 art5"
+        "art6 art7"
+        "art8 art7"
+        "art9 art9"
+        "art10 vacio"
+        "art11 art11";
+    }    
+
+  }

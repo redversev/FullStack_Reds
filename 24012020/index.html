@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+
+<body>
+    <button id="mi-boton" data-value="Samy" onclick="seleccionarNombre(event)">Seleccionar a Samy</button>
+    <button id="mi-boton2" data-value="Tomy" onclick="seleccionarNombre(event)">Seleccionar a Tomy</button>
+
+    <div class="output"></div>
+
+<script src="js/taller.js"></script>
+
+<script>
+ //var boton = document.querySelector('#mi-boton')
+
+//  function deshabilitarBoton(event){
+//      event.target.disabled = true
+//  }
+
+
+ function seleccionarNombre(event){
+     var boton = event.target // hace referencia al boton que se hizo click
+     var valor = boton.dataset.value
+     var output = document.querySelector('.output')
+     output.innerHTML = `Seleccionamos a ${valor}`
+    
+    }
+</script>
+</body>
+</html>
