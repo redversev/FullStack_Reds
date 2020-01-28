@@ -8,3 +8,5 @@ while (numeroDomingos < 7) {
     }
 }
 console.log(fecha)
+var contenedor = document.querySelector("#respuesta")
+contenedor.innerHTML = fecha

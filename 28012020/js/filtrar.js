@@ -1,7 +1,7 @@
 console.log("Filtrar iniciado")
 var articulos = null
 var contenido = document.querySelector(".contenedor")
-var mostrsarse = null
+var mostrarse = null
 
 function filtrar(event) {
     var valor = document.querySelector('#filtrar').value
@@ -9,7 +9,7 @@ function filtrar(event) {
 
     var todos = document.querySelectorAll('.articulo')
     for (var i = 0; i < todos.length; i++) {
-        todos[i].style.display = "none"
+        todos[i].className = "articulo ocultar"
     }
 
     if (valor === "Ropa") {
@@ -26,7 +26,7 @@ function filtrar(event) {
     }
 
     for (var i = 0; i < mostrarse.length; i++) {
-        mostrarse[i].style.display = "flex"
+        mostrarse[i].className = "articulo"
     }
 
 }

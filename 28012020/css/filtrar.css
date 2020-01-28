@@ -30,6 +30,9 @@
     justify-content: center;
     align-items: center;
 }
+.ocultar{
+    display: none;
+}
 .articulo img{
     max-width: 300px;
     max-height: 300px;
