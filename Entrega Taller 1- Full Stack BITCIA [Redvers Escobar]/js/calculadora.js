@@ -63,7 +63,7 @@ Array.prototype.forEach.call(botones, function (boton) {
     boton.addEventListener('click', conocerValor)
 })
 
-//Le agrega la funcion a todos los botones que cumplan con la clase box
+//Le agrega la funcion a todos los botones que cumplan con la clase Operador
 botones_operador = document.querySelectorAll(".operador")
 Array.prototype.forEach.call(botones_operador, function (boton_operador) {
     boton_operador.addEventListener('click', conocerOperador)

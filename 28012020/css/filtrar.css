@@ -1,3 +1,18 @@
+.titulo{
+    margin: auto;
+    max-width: 1000px;
+}
+.menu{
+    margin: auto;
+    max-width: 1000px;
+}
+.menu .select{
+    width: 100%;
+    font-size: 1em;
+    padding: 30px 10px;
+    margin: 20px;
+    display: block;
+}
 .contenedor{
     display: flex;
     justify-content: center;

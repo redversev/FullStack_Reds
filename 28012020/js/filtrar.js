@@ -1,18 +1,32 @@
 console.log("Filtrar iniciado")
+var articulos = null
+var contenido = document.querySelector(".contenedor")
+var mostrsarse = null
 
-function filtrar(event){
+function filtrar(event) {
     var valor = document.querySelector('#filtrar').value
-    console.log(valor)
+    console.log(`Valor seleccionado: ${valor}`)
 
-    if (valor === "Ropa"){
-        console.log("Entró en Ropa")
-            articulos = document.querySelectorAll(".articulo")
-            Array.prototype.forEach.call(articulos, function (articulos) {
-                articulos.addClass("mostrar")
-})
+    var todos = document.querySelectorAll('.articulo')
+    for (var i = 0; i < todos.length; i++) {
+        todos[i].style.display = "none"
     }
 
-})
+    if (valor === "Ropa") {
+        mostrarse = document.querySelectorAll('div[data-value="ropa"]')
+    }
+    else if (valor === "Celulares") {
+        mostrarse = document.querySelectorAll('div[data-value="cel"]')
+    }
+    else if (valor === "Computadores") {
+        mostrarse = document.querySelectorAll('div[data-value="tecno"]')
+    }
+    else {
+        mostrarse = document.querySelectorAll('.articulo')
+    }
 
+    for (var i = 0; i < mostrarse.length; i++) {
+        mostrarse[i].style.display = "flex"
+    }
 
 }
