@@ -1,0 +1,16 @@
+button{
+    border: none;
+    background-color: lightgray;
+    padding: 20px;
+}
+#mi-boton{
+    color: white;
+    background-color: blue;
+}
+.mi-otro-boton{
+    background-color: lightskyblue;
+}
+button[data-value="mi-ultimo-boton"]{
+    color: purple;
+    background-color: lightslategray;
+}

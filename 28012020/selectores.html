@@ -5,11 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/selectores.css">
     <title>Selectores</title>
 </head>
 
 <body>
     <h1>Selectores</h1>
+    <div class="contenedor">
+        <button id="mi-boton">Primero</button>
+        <button class="mi-otro-boton">Segundo</button>
+        <button data-value="mi-ultimo-boton">Tercero</button>
+    </div>
+
+    <br>
+    Selector en Javascript <br>
+    document.querySelector('button[data-value="mi-ultimo-boton"]')
+
+    <br><br>
+    var miBoton = document.querySelector("#mi-boton") <br>
+    miBoton.dataset.algo ="Pruebas" <br>
+    
+
+
 
 <script src="js/selectores.js"></script>
 </body>
