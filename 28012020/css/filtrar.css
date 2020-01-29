@@ -9,9 +9,11 @@
 .menu .select{
     width: 100%;
     font-size: 1em;
-    padding: 30px 10px;
+    padding: 10px 10px;
     margin: 20px;
     display: block;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
 }
 .contenedor{
     display: flex;
@@ -27,8 +29,10 @@
     min-height: 300px;
     margin: 0 5px 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 .ocultar{

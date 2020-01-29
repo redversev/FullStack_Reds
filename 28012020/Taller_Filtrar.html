@@ -17,16 +17,26 @@
     </div>
 
     <div class="menu">
-        <select name="filtrar" id="filtrar" onchange="filtrar()" class="select">
+        <select id="filtrar" onchange="filtrar()" class="select">
             <option value="Todos">Seleccione:</option>
             <option value="Celulares">Celulares</option>
             <option value="Computadores">Computadores</option>
             <option value="Ropa">Ropa</option>
          </select>
+        <select id="ordenar" onchange="ordenar()" class="select">
+            <option value="Todos">Ordenar:</option>
+            <option value="cel">Celulares</option>
+            <option value="tecno">Computadores</option>
+            <option value="ropa">Ropa</option>
+         </select>
     </div>
 
-    <div class="contenedor">
-        <div class="articulo" data-value="ropa"><img src="imagenes/camisa.jpg" alt="Camisa"></div>
+    <div class="contenedor" id="contenedor">
+        <div class="articulo" data-value="ropa"><img src="imagenes/camisa.jpg" alt="Camisa">
+        <div class="datos">
+            <div class="nombre">NOMBRE</div>
+            <div class="precio">PRECIO</div>
+        </div></div>
         <div class="articulo" data-value="tecno"><img src="imagenes/computador.jpg" alt="Computador"></div>
         <div class="articulo" data-value="ropa"><img src="imagenes/pantalon.jpg" alt="Pantalón"></div>
         <div class="articulo" data-value="cel"><img src="imagenes/celular.jpg" alt="Celular"></div>
