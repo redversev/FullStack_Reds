@@ -75,34 +75,40 @@ productos.forEach(function (producto) {
 
 contenedor.innerHTML = contenido
 
-
-var comparador = ''
-let contenidoOrdenado = ''
-
 function ordenar() {
-    var productosOrdenados = []
-    console.log("El ojetivo tiene: " +contenidoOrdenado)
-
+    contenido = ''
     var ordenarPor = document.querySelector('#ordenar').value
     console.log(`Orden seleccionado: ${ordenarPor}`)
 
-    for (let i in productos) {
-        comparador = productos[i].datavalue
-    
-        if(comparador === ordenarPor){
-            productosOrdenados.unshift(productos[i])
-        }
-        else{
-            productosOrdenados.push(productos[i])
-        }            
+    switch (ordenarPor) {
+        case 'Todos':
+            console.log("Caso Todos")
+                productos.sort(function (ob1, ob2) {
+                    if (ob1.datavalue > ob2.datavalue) {
+                        return 1
+                    }
+                    else {
+                        return -1
+                    }
+                })
+            break
+        case 'cel':
+            console.log("Caso Cel")
+            break
+        case 'tecno':
+            console.log("Caso Tecno")
+            break
+        default: 
+            console.log("Caso por defecto")
     }
-    var total = productos.length
-    console.log("Salio del for: "+ total)
 
-    productosOrdenados.forEach(function (productoOrdenado) {
-        contenidoOrdenado += `<div class="articulo" data-value="${productoOrdenado.datavalue}"><img src="${productoOrdenado.imagen}" alt="${productoOrdenado.nombre}">
-      <div class="datos"><div class="nombre">${productoOrdenado.nombre}</div><div class="precio">${productoOrdenado.precio}</div></div></div>`
+
+    var total = productos.length
+    console.log("Salio del for: " + total)
+
+    productos.forEach(function (producto) {
+        contenido += `<div class="articulo" data-value="${producto.datavalue}"><img src="${producto.imagen}" alt="${producto.nombre}">
+      <div class="datos"><div class="nombre">${producto.nombre}</div><div class="precio">${producto.precio}</div></div></div>`
     })
-    contenedor.innerHTML = contenidoOrdenado 
-    contenidoOrdenado = ''
+    contenedor.innerHTML = contenido
 }

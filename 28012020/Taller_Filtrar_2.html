@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taller: Filtrar elementos (2) - Redvers Escobar Vaquer</title>
+    <link rel="stylesheet" href="css/filtrar.css">
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>
+            Filtrar por:
+        </h1>
+    </div>
+
+    <div class="menu">
+        <select id="filtrar" onchange="filtrar()" class="select">
+            <option value="Todos">Seleccione:</option>
+            <option value="Celulares">Celulares</option>
+            <option value="Computadores">Computadores</option>
+            <option value="Ropa">Ropa</option>
+         </select>
+        <select id="ordenar" onchange="ordenar()" class="select">
+            <option value="Todos">Ordenar:</option>
+            <option value="cel">Celulares</option>
+            <option value="tecno">Computadores</option>
+            <option value="ropa">Ropa</option>
+         </select>
+    </div>
+
+    <div class="contenedor" id="contenedor">
+        <div class="articulo" data-value="ropa"><img src="imagenes/camisa.jpg" alt="Camisa">
+        <div class="datos">
+            <div class="nombre">NOMBRE</div>
+            <div class="precio">PRECIO</div>
+        </div></div>
+        <div class="articulo" data-value="tecno"><img src="imagenes/computador.jpg" alt="Computador"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/pantalon.jpg" alt="Pantalón"></div>
+        <div class="articulo" data-value="cel"><img src="imagenes/celular.jpg" alt="Celular"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/camisa.jpg" alt="Camisa"></div>
+        <div class="articulo" data-value="tecno"><img src="imagenes/computador.jpg" alt="Computador"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/pantalon.jpg" alt="Pantalón"></div>
+        <div class="articulo" data-value="cel"><img src="imagenes/celular.jpg" alt="Celular"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/camisa.jpg" alt="Camisa"></div>
+        <div class="articulo" data-value="tecno"><img src="imagenes/computador.jpg" alt="Computador"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/pantalon.jpg" alt="Pantalón"></div>
+        <div class="articulo" data-value="cel"><img src="imagenes/celular.jpg" alt="Celular"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/camisa.jpg" alt="Camisa"></div>
+        <div class="articulo" data-value="tecno"><img src="imagenes/computador.jpg" alt="Computador"></div>
+        <div class="articulo" data-value="ropa"><img src="imagenes/pantalon.jpg" alt="Pantalón"></div>
+        <div class="articulo" data-value="cel"><img src="imagenes/celular.jpg" alt="Celular"></div>
+    </div>
+
+<script src="js/filtrar_2.js"></script>
+</body>
+</html>
