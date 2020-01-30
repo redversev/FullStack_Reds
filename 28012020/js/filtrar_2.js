@@ -1,6 +1,7 @@
 console.log("Filtrar iniciado")
 var articulos = null
 var mostrarse = null
+const sorter = document.querySelector
 
 function filtrar(event) {
     var valor = document.querySelector('#filtrar').value
@@ -83,14 +84,14 @@ function ordenar() {
     switch (ordenarPor) {
         case 'Todos':
             console.log("Caso Todos")
-                productos.sort(function (ob1, ob2) {
-                    if (ob1.datavalue > ob2.datavalue) {
-                        return 1
-                    }
-                    else {
-                        return -1
-                    }
-                })
+            productos.sort(function (ob1, ob2) {
+                if (ob1.datavalue > ob2.datavalue) {
+                    return 1
+                }
+                else {
+                    return -1
+                }
+            })
             break
         case 'cel':
             console.log("Caso Cel")
@@ -98,7 +99,7 @@ function ordenar() {
         case 'tecno':
             console.log("Caso Tecno")
             break
-        default: 
+        default:
             console.log("Caso por defecto")
     }
 
@@ -112,3 +113,4 @@ function ordenar() {
     })
     contenedor.innerHTML = contenido
 }
+

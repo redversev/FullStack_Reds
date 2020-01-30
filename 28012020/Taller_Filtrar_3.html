@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taller: Filtrar elementos (2) - Redvers Escobar Vaquer</title>
+    <title>Taller: Filtrar elementos - Redvers Escobar Vaquer</title>
     <link rel="stylesheet" href="css/filtrar.css">
 </head>
 
@@ -16,6 +16,13 @@
         </h1>
     </div>
 
+    <div class="container">
+        <div class="row">
+
+        </div>
+        <div class="row"></div>
+    </div>
+
     <div class="menu">
         <select id="filtrar" onchange="filtrar()" class="select">
             <option value="Todos">Seleccione:</option>
@@ -23,11 +30,18 @@
             <option value="Computadores">Computadores</option>
             <option value="Ropa">Ropa</option>
          </select>
-        <select id="ordenar" onchange="ordenar()" class="select">
-            <option value="Todos">Ordenar:</option>
+        <select id="mostrarPrimero" onchange="mostrarPrimero()" class="select">
+            <option value="Todos">Mostrar primero:</option>
             <option value="cel">Celulares</option>
             <option value="tecno">Computadores</option>
             <option value="ropa">Ropa</option>
+         </select>
+        <select id="ordenadorSelect" class="select">
+            <option value="Todos">Ordenar:</option>
+            <option value="MenorAMayor">Menor a Mayor</option>
+            <option value="MayorAMenor">Mayor a Menor</option>
+            <option value="AZ">Orden A-Z</option>
+            <option value="ZA">Orden Z-A</option>
          </select>
     </div>
 
@@ -56,6 +70,6 @@
 
 
 
-<script src="js/filtrar_2.js"></script>
+<script src="js/filtrar_3.js"></script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "precio": 3000.4,
+    "disponible": true,
+    "colores": [
+        "rojo",
+        "azul",
+        "verde",
+        "amarillo"
+    ]
+}
