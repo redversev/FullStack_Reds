@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 .contenedor .personaje{
     width: 100%;
@@ -45,6 +46,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
 }
 .encabezado .texto{
     font-size: 1.3em;
@@ -57,40 +60,70 @@ body{
     border: 1px solid lightgray;
     cursor: pointer;
 }
-.totalregistros{
+.encabezado .totalregistros{
     border: 1px solid lightgray;
     background-color: rgba(0,0,0,0.02);
     padding: 10px 10px;
     border-radius: 5px;
-    margin: 10px 20px;
-    max-width: 100%;
+    margin: 10px auto;
+    max-width: 96%;
+    width: 100%;
     text-align: right;
 }
-.buscador{
+.encabezado{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.encabezado .buscador{
     border: 1px solid lightgray;
     background-color: black;
     color: white;
     padding: 10px 10px;
     border-radius: 5px;
-    margin: 10px 20px;
-    max-width: 100%;
+    width: 96%;
+    margin: auto;
     text-align: right;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
-#buscar{
+.encabezado .buscador #buscar{
     border-radius: 5px;
     border: 1px solid grey;
-    margin: 5px;
     padding: 5px 10px;
     font-size: 1.3em;
+    margin-left: 5px;
+    cursor: pointer;
 }
-#palabra{
-    padding: 5px 10px;
-    margin: 0 5px;
+.encabezado .buscador #palabra{
+    padding: 10px 10px;
+    margin: 0 auto;
     border-radius: 5px;
     border: 1px solid;
     min-width: 250px;
     font-size: 1.4em;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .encabezado .buscador #palabra{
+        width: 100%;
+        margin: 5px auto;
+        min-width: initial;
+        padding: 10px 0;
+    }
+    .encabezado .buscador {
+        flex-direction: column;
+    }
+    .encabezado .texto {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .totalregistros{
+        margin: auto;
+        text-align: center;
+    }
+
 }

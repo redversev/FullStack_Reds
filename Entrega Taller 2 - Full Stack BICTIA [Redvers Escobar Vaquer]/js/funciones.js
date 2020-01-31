@@ -34,7 +34,6 @@ function buscar() {
         }
     })
 }
-
 buscar()
 
 
