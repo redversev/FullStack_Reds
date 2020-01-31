@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor .personaje{
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid lightgray;
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px;
+}
+.contenedor .personaje img{
+    max-width: 100%;
+}
+.encabezado .paginacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.encabezado .paginacion button{
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.totalregistros{
+    border: 1px solid lightgray;
+    background-color: rgba(0,0,0,0.02);
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 10px 20px;
+    max-width: 100%;
+    text-align: right;
+}
+.buscador{
+    border: 1px solid lightgray;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 10px 20px;
+    max-width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buscar{
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 5px;
+}
+#palabra{
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
