@@ -31,7 +31,11 @@ function buscar() {
             </div>`
             })
             totalregistros.innerHTML = `Total Registros: ` + total + ` - Páginas: ` + totalPaginas
-        }
+        },
+        error: function(error) {
+            console.error('No se encontraron registros, repita la búsqueda ', error)
+            contenedor.innerHTML = `<div class="error">No se encontraron registros, repita la búsqueda.</div>`
+          }
     })
 }
 buscar()
