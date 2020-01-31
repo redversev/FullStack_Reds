@@ -10,27 +10,25 @@
     </head>
 
     <body>
-        <div class="titulo">
-            <h1>Entrega Taller 2 - Full Stack BICTIA [Redvers Escobar Vaquer]</h1>
-        </div>
-
-        <div class="encabezado">
+        <div class="header">
+            <div class="titulo">
+                <h1>Entrega Taller 2 - Full Stack BICTIA [Redvers Escobar Vaquer]</h1>
+            </div>
             <div class="buscador">
                 <div class="texto">Busque un personaje:</div>
                 <div class="input">
-                    <input type="text" id="palabra">
+                    <input type="text" id="palabra" placeholder="Buscar">
                 </div>
                 <div>
                     <button id="buscar" onclick="buscarPersonaje()">Buscar</button>
                 </div>
             </div>
             <div class="totalregistros"></div>
-            <div class="paginacion">
-                <button id="atras" onclick="atras()">Atrás</button>
-                <button id="proxima" onclick="proxima()">Próxima</button>
-            </div>
+        </div>
 
-
+        <div class="paginacion">
+            <button id="atras" onclick="atras()">Atrás</button>
+            <button id="proxima" onclick="proxima()">Próxima</button>
         </div>
 
         <div class="contenedor"></div>

@@ -3,8 +3,54 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
 }
-.titulo{
+.header{
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.header .titulo{
+    padding: 5px 20px;
+}
+.header .buscador{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
     padding: 10px 20px;
+}
+.header .buscador .input{
+    padding: 0 10px;
+}
+.header .buscador input{
+    width: 100%;
+    color: grey;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+.header .buscador input #palabra{
+    max-width: 100%;
+}
+.header .totalregistros{
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 1.1em;
+    padding: 10px 20px;
+}
+.header .buscador #buscar{
+    margin: 0 5px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
 }
 .contenedor{
     display: flex;
@@ -42,87 +88,32 @@ body{
 .contenedor .personaje img{
     max-width: 100%;
 }
-.encabezado .paginacion{
+.paginacion{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;
 }
-.encabezado .texto{
-    font-size: 1.3em;
-    padding: 0 10px 0;
-}
-.encabezado .paginacion button{
+.paginacion button{
     margin: 0 5px;
     padding: 5px 10px;
     border-radius: 5px;
-    border: 1px solid lightgray;
-    cursor: pointer;
-}
-.encabezado .totalregistros{
-    border: 1px solid lightgray;
-    background-color: rgba(0,0,0,0.02);
-    padding: 10px 10px;
-    border-radius: 5px;
-    margin: 10px auto;
-    max-width: 96%;
-    width: 100%;
-    text-align: right;
-}
-.encabezado{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-.encabezado .buscador{
-    border: 1px solid lightgray;
-    background-color: black;
-    color: white;
-    padding: 10px 10px;
-    border-radius: 5px;
-    width: 96%;
-    margin: auto;
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.encabezado .buscador #buscar{
-    border-radius: 5px;
-    border: 1px solid grey;
-    padding: 5px 10px;
     font-size: 1.3em;
-    margin-left: 5px;
     cursor: pointer;
 }
-.encabezado .buscador #palabra{
-    padding: 10px 10px;
-    margin: 0 auto;
-    border-radius: 5px;
-    border: 1px solid;
-    min-width: 250px;
-    font-size: 1.4em;
-}
+
 
 @media only screen and (max-width:1000px) {
 
-    .encabezado .buscador #palabra{
-        width: 100%;
-        margin: 5px auto;
-        min-width: initial;
-        padding: 10px 0;
-    }
-    .encabezado .buscador {
+    .header .buscador{
         flex-direction: column;
     }
-    .encabezado .texto {
-        padding: 0 10px;
-        text-align: center;
+    .header .buscador .input{
+        padding: 10px;
     }
-    .totalregistros{
-        margin: auto;
+
+    .header .totalregistros{
         text-align: center;
     }
 
