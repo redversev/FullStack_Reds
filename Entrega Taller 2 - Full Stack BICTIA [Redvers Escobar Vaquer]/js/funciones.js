@@ -1,18 +1,20 @@
 const contenedor = document.querySelector('.contenedor')
-const paginacion = document.querySelector('.paginacion')
 const totalregistros = document.querySelector('.totalregistros')
 const textoIngresado = document.querySelector('#palabra')
-var Urlproxima = ''
-var Urlanterior = ''
+var urlProxima = ''
+var urlAtras = ''
 var total = ''
+var totalPaginas = ''
 var url = "https://rickandmortyapi.com/api/character/"
 
-function buscar(){
+function buscar() {
     jQuery.ajax(url, {
         success: function (response) {
-            proxima = response.info.next
-            anterior = response.info.prev
+            console.log(response)
+            urlProxima = response.info.next
+            urlAtras = response.info.prev
             total = response.info.count
+            totalPaginas = response.info.pages
             contenedor.innerHTML = ""
             response.results.forEach(function (personaje) {
                 contenedor.innerHTML = contenedor.innerHTML + `<div class="personaje">
@@ -26,23 +28,44 @@ function buscar(){
                         <div class="genero">Origen: ${personaje.origin.name}</div>
                     </div>
                 </div>
-            </div>`        
-        })
-        totalregistros.innerHTML = `Total Registros: ` + total
+            </div>`
+            })
+            totalregistros.innerHTML = `Total Registros: ` + total + ` - Páginas: ` + totalPaginas
         }
     })
-    
 }
 
 buscar()
-function buscarPersonaje(){
-    url ="https://rickandmortyapi.com/api/character/?name=" + textoIngresado.value
-    console.log("Proxima: "+ proxima)
-    console.log("Anterior: "+ atras)
+
+
+function buscarPersonaje() {
+    url = "https://rickandmortyapi.com/api/character/?name=" + textoIngresado.value
+    console.log("Próxima: " + urlProxima)
+    console.log("Anterior: " + urlAtras)
     buscar()
 }
 
-function proxima(){
-    var url = urlProxima
-    console.log("Proxima: "+ urlProxima)
+function proxima() {
+
+    if (urlProxima === '') {
+        alert("No hay más páginas.")
+        return
+    }
+    else {
+        url = urlProxima
+        console.log("Próxima: " + urlProxima)
+        console.log("Anterior: " + urlAtras)
+        buscar()
+    }
+}
+function atras() {
+    if (urlAtras === '') {
+        alert("Esta es la primera página.")
+        return
+    } else {
+        url = urlAtras
+        console.log("Próxima: " + urlProxima)
+        console.log("Anterior: " + urlAtras)
+        buscar()
+    }
 }

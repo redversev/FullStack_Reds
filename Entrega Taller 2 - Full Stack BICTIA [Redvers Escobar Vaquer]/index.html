@@ -5,29 +5,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ejemplos AJAX - Redvers Escobar Vaquer</title>
+        <title>Entrega 2 - Redvers Escobar Vaquer</title>
         <link rel="stylesheet" href="css/estilos.css">
     </head>
 
     <body>
-        <h1>Trabajando con AJAX</h1>
+        <div class="titulo">
+            <h1>Entrega Taller 2 - Full Stack BICTIA [Redvers Escobar Vaquer]</h1>
+        </div>
 
         <div class="encabezado">
-            <div class="resultado"></div>
-            <div class="paginacion">
-                <button id="atras" onclick="atras()">Atrás</button>
-                <button id="proxima" onclick="proxima()">Próxima</button>
-            </div>
-
             <div class="buscador">
-                <div class="texto">Buscar:</div>
+                <div class="texto">Busque un personaje:</div>
                 <div class="input">
                     <input type="text" id="palabra">
                 </div>
                 <button id="buscar" onclick="buscarPersonaje()">Buscar</button>
             </div>
-
-            <div class="totalregistros"> </div>
+            <div class="paginacion">
+                <button id="atras" onclick="atras()">Atrás</button>
+                <button id="proxima" onclick="proxima()">Próxima</button>
+            </div>
+            <div class="totalregistros"></div>
 
 
         </div>
@@ -36,6 +35,6 @@
 
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/funciones.js"><script>
+        <script src="js/funciones.js"></script>
     </body>
 </html>
