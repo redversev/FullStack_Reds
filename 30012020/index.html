@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejemplos AJAX - Redvers Escobar Vaquer</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejemplos AJAX - Redvers Escobar Vaquer</title>
+    </head>
 
-<body>
-    <h1></h1>
+    <body>
+        <h1>Trabajando con AJAX</h1>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        
+        
+        <script>
+        
+        jQuery.ajax('https://rickandmortyapi.com/api', {
+            method: 'GET',
+            success: function(response){
+                //Obteniendo Personajes
+                console.log(response.characters)
+                jQuery.ajax(response.characters, {
+                    method: 'GET',
+                    success: function(response){
+                        console.log('Lista de Personajes', response)
+                    }
+                })
+            }
+            
+        })
 
-<script>
-console.log($)
+        </script>
 
-</script>
-
-</body>
+    </body>
 </html>
