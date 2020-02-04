@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+}
+.titulo{
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+header .contenedor{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+header .contenedor .login{
+    display: flex;
+}
+header .contenedor .login div{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.contenedor .slider{
+    padding-top: 60px;
+}
+.color1{
+    background-color: #19100e;
+}
+.color2{
+    background-color: #2f2011;
+}
+.color3{
+    background-color: #6f1401;
+}
+.color4{
+    background-color: #54422d;
+}
+.color5{
+    background-color: #9f4300;
+}
+.color6{
+    background-color: #a0ae97;
+}
+.color7{
+    background-color: #8eadad;
+}
+.btn_enviar{
+    width: 100%;
+    text-align: right;
+}
+#contenedor_cartelera{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contenedor_cartelera .pelicula{
+    border: 1px solid grey;
+    background-color: lightgray;
+    max-width: 250px;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+#contenedor_cartelera .pelicula .imagen img{
+    max-width: 100%;
+}
+#contenedor_cartelera .pelicula .sinopsis{
+    font-size: .8em;
+    line-height: 1.2;
+    text-align: justify;
+}
