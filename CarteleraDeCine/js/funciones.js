@@ -35,10 +35,6 @@ function proximosEstrenos() {
     })
 }
 
-document.querySelector('.btn_enviar button').addEventListener('click', function (event) {
-    alert('Se presionó enviar')
-})
-
 function cartelera() {
     jQuery.ajax(url + apiCartelera + "?api_key=" + apiKey + "&language=es-US&page=1", {
         success: function (responseCartelera) {
@@ -64,6 +60,6 @@ function cartelera() {
     })
 }
 
-cartelera()
-proximosEstrenos()
-
+document.querySelector('.btn_enviar button').addEventListener('click', function (event) {
+    alert('Se presionó enviar')
+})
