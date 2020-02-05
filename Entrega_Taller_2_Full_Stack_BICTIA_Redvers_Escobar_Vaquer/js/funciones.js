@@ -49,7 +49,6 @@ function buscarPersonaje() {
 }
 
 function proxima() {
-
     if (urlProxima === '') {
         alert("No hay más páginas.")
         return
