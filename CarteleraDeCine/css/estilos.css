@@ -11,12 +11,13 @@ header{
     border-bottom: 2px solid #db5453;
 }
 .contenedor{
-    max-width: 1200px;
+    max-width: 1140px;
+    padding: 0 20px;
     margin: auto;
 }
 .titulo{
     padding: 5px 10px;
-    margin: 10px auto;
+    margin: 20px auto;
     color: #772021;
     font-size: 1.2em;
     font-weight: bold;
@@ -126,7 +127,7 @@ header .contenedor .login div{
     margin-top: 20px;
     background-color: lightgray;
     color: grey;
-    font-size: .8em;
+    font-size: 1em;
 }
 .footer .footer_int{
     margin: auto;
@@ -135,4 +136,17 @@ header .contenedor .login div{
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
+}
+.link a{
+    text-decoration: none;
+    color: grey;
+    transition: .5s all ease;
+}
+.link a:hover{
+    margin-left: 10px;
+}
+.contactenos_ct{
+    padding: 80px 20px 20px;
+    margin: auto;
+    max-width: 900px;
 }
