@@ -1,4 +1,4 @@
-console.log("Arrancó la función")
+var nombreUsuarioLogueado = window.localStorage.getItem('usuario');
 var proximos_cont = document.querySelector('#proximosEstrenos')
 var cartelera_cont = document.querySelector('#cartelera')
 var boton_enviar = document.querySelector('.btn_enviar button')
@@ -60,6 +60,27 @@ function cartelera() {
     })
 }
 
+
+
 document.querySelector('.btn_enviar button').addEventListener('click', function (event) {
-    alert('Se presionó enviar')
+    registrarUsuario()
 })
+
+function registrarUsuario() {
+    var nombreUsuario = document.querySelector('form #nombreUsuario').value
+    window.localStorage.setItem('usuario', nombreUsuario);
+}
+function cerrarSesion() {
+    window.localStorage.clear();
+    nombreUsuarioLogueado = null
+    document.querySelector('.sesion').innerHTML = '<div class="accion" data-toggle="modal"data-target="#login">Iniciar Sesión</div>'
+}
+
+if (nombreUsuarioLogueado === null) {
+    console.log("NOT LOG")
+}
+else {
+    console.log("Usuario Logueado")
+    document.querySelector('.sesion').innerHTML = '<div class="accion" >Usuario: '+nombreUsuarioLogueado+'</div><div class="logout" onclick="cerrarSesion()">[Cerrar]</div>'
+}
+

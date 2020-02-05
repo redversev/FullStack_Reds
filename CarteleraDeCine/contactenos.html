@@ -19,34 +19,46 @@
                 <div class="nombre">
                     <img src="imagenes/logo_cinema.png" alt="Cinema Red">
                 </div>
-                <div class="login">
+                <div class="sesion">
                     <div class="accion" data-toggle="modal"
                         data-target="#login">Iniciar Sesión</div>
                 </div>
+
             </div>
         </header>
 
         <section class="contactenos_ct">
 
-            <section class="contenedor titulo">Contáctenos</section
-                class="contenedor">
+                <section class="titulo">Contáctenos</section>
                 <form>
                     <div class="form-group">
-                      <label for="formCorreo">Su correo electrónico</label>
-                      <input type="email" class="form-control" id="formCorreo" placeholder="name@example.com" required>
+                        <label for="formCorreo">Su correo electrónico</label>
+                        <input type="email" class="form-control" id="formCorreo"
+                            placeholder="name@example.com" required>
                     </div>
                     <div class="form-group">
-                      <label for="formTelefono">Teléfono de contacto</label>
-                      <input type="text" class="form-control" id="formTelefono" placeholder="Teléfono de contacto" required>
+                        <label for="formTelefono">Teléfono de contacto</label>
+                        <input type="text" class="form-control"
+                            id="formTelefono" placeholder="Teléfono de contacto"
+                            required>
                     </div>
                     <div class="form-group">
-                      <label for="formComentarios">Comentarios</label>
-                      <textarea class="form-control" id="formComentarios" rows="3" placeholder="Escriba sus comentarios" required></textarea>
+                        <label for="formComentarios">Comentarios</label>
+                        <textarea class="form-control" id="formComentarios"
+                            rows="3" placeholder="Escriba sus comentarios"
+                            required></textarea>
                     </div>
                     <div class="btn_enviar_contactenos">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
-                  </form>
+                </form>
+        </section>
+
+        <section class="contenedor">
+            <section class="contenedor titulo">Cartelera</section>
+            <div class="contenedor_peliculas" id="cartelera">
+                Aquí van las peliculas en cartelera
+            </div>
         </section>
 
         <div class="modal fade" id="login" tabindex="-1" role="dialog"
@@ -97,7 +109,7 @@
                         </a>
                     </div>
                     <div class="link">
-                        <a href="sobre_nosotros.html">
+                        <a href="acerca_de.html">
                             Acerca de
                         </a>
                     </div>
@@ -134,6 +146,10 @@
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/funciones.js"></script>
+
+        <script>
+            cartelera()
+        </script>
 
     </body>
 
