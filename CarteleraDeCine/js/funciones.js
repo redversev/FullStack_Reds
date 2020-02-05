@@ -2,6 +2,7 @@ var nombreUsuarioLogueado = window.localStorage.getItem('usuario');
 var proximos_cont = document.querySelector('#proximosEstrenos')
 var cartelera_cont = document.querySelector('#cartelera')
 var boton_enviar = document.querySelector('.btn_enviar button')
+var boton_enviar_contactenos = document.querySelector('.btn_enviar_contactenos button')
 var url = "https://api.themoviedb.org/3/movie/"
 var urlImagen = "https://image.tmdb.org/t/p/w500"
 var apiProximos = "popular"
@@ -60,6 +61,16 @@ function cartelera() {
     })
 }
 
+function contactenos(){
+    boton_enviar_contactenos.disabled = true
+    document.querySelector('.btn_enviar_contactenos button').addEventListener('click', function (event) {
+        var contactenosNombre = document.querySelector('form #formNombre').value
+        var contactenosCorreo = document.querySelector('form #formCorreo').value
+        var contactenosTelefono = document.querySelector('form #formTelefono').value
+        var contactenosComentarios = document.querySelector('form #formComentarios').value
+        console.log(`Se enviará un correo a: `+contactenosCorreo+ ` con el siguiente mensaje: `+contactenosComentarios)
+    })
+}
 
 
 document.querySelector('.btn_enviar button').addEventListener('click', function (event) {
@@ -69,18 +80,21 @@ document.querySelector('.btn_enviar button').addEventListener('click', function 
 function registrarUsuario() {
     var nombreUsuario = document.querySelector('form #nombreUsuario').value
     window.localStorage.setItem('usuario', nombreUsuario);
+    console.log("%cUsuario registrado.", "Color: yellow")
+    console.log(`Usuario: ` + nombreUsuario)
 }
 function cerrarSesion() {
     window.localStorage.clear();
     nombreUsuarioLogueado = null
     document.querySelector('.sesion').innerHTML = '<div class="accion" data-toggle="modal"data-target="#login">Iniciar Sesión</div>'
+    console.log("%cUsuario desconectado.", "Color: red")
 }
 
 if (nombreUsuarioLogueado === null) {
-    console.log("NOT LOG")
+    console.log("%cUsuario sin iniciar sesión.", "Color: red")
 }
 else {
-    console.log("Usuario Logueado")
-    document.querySelector('.sesion').innerHTML = '<div class="accion" >Usuario: '+nombreUsuarioLogueado+'</div><div class="logout" onclick="cerrarSesion()">[Cerrar]</div>'
+    console.log("%cUsuario conectado.", "Color: green")
+    document.querySelector('.sesion').innerHTML = '<div class="accion" >Bienvenido: '+nombreUsuarioLogueado+'</div><div class="logout" onclick="cerrarSesion()">[Cerrar]</div>'
 }
 
