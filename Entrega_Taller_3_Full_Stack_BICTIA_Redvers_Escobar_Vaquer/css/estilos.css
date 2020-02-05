@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+    margin: 0;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 2px solid #db5453;
+}
+.contenedor{
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: auto;
+}
+.titulo{
+    padding: 5px 10px;
+    margin: 20px auto;
+    color: #772021;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: darkkhaki;
+    border-radius: 5px;
+}
+header .contenedor{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contenedor .sesion{
+    display: flex;
+}
+header .contenedor .sesion div{
+    padding-right: 10px;
+    color: white;
+}
+header .contenedor .sesion .accion, header .contenedor .sesion .logout{
+    cursor: pointer;
+}
+.slider{
+    padding-top: 80px;
+    margin: auto;
+    max-width: 1200px;
+}
+.darkred{
+    background-color: darkred;
+}
+.color1{
+    background-color: #19100e;
+}
+.color2{
+    background-color: #2f2011;
+}
+.color3{
+    background-color: #6f1401;
+}
+.color4{
+    background-color: #54422d;
+}
+.color5{
+    background-color: #9f4300;
+}
+.color6{
+    background-color: #a0ae97;
+}
+.color7{
+    background-color: #8eadad;
+}
+.btn_enviar{
+    width: 100%;
+    text-align: right;
+}
+.contenedor_peliculas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px 20px;
+}
+.contenedor_peliculas .pelicula{
+    border: 1px solid darkkhaki;
+    background-color: lightgray;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 250px;
+    transition: .5s all ease;
+    position: relative;
+}
+.contenedor_peliculas .pelicula:hover{
+    box-shadow: lightgrey 0px 0px 5px 5px;
+    background-color: darkkhaki;
+}
+.contenedor_peliculas .pelicula .imagen img{
+    max-width: 100%;
+}
+.contenedor_peliculas .pelicula .nombre_estreno{
+    color: white;
+    background-color: grey;
+    text-align: right;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 5px 20px 5px 10px;
+    bottom: 20px;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: white 0px 0px 5px;
+}
+.contenedor_peliculas .pelicula .nombre{
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 10px 0;
+}
+.contenedor_peliculas .pelicula .sinopsis{
+    font-size: .8em;
+    line-height: 1.2;
+    text-align: justify;
+}
+.footer{
+    border-top: 2px solid darkkhaki;
+    margin-top: 20px;
+    background-color: lightgray;
+    color: grey;
+    font-size: 1em;
+}
+.footer .footer_int{
+    margin: auto;
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.link a{
+    text-decoration: none;
+    color: grey;
+    transition: .5s all ease;
+}
+.link a:hover{
+    margin-left: 10px;
+}
+.contactenos_ct{
+    padding: 80px 20px 20px;
+    margin: auto;
+    max-width: 1140px;
+}
+.contactenos_ct form{
+    background-color: rgba(0,0,0,0.04);
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 900px;
+}
+.acerca{
+    padding: 20px 40px;
+}
