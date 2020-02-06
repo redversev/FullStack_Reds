@@ -21,7 +21,7 @@ function proximosEstrenos() {
             contador = 0
             response.results.forEach(function (peliculas) {
                 contador++
-                if (contador < 5) {
+                if (contador < 9) {
                     proximos_cont.innerHTML = proximos_cont.innerHTML + `<div class="pelicula">
                     <div class="imagen"><img src="${urlImagen}${peliculas.poster_path}"></div>
                     <div class="nombre_estreno">${peliculas.title}</div>
