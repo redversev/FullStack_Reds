@@ -1,0 +1,662 @@
+db.rest.insert({
+    nombre: 'El barco de Colon',
+    paginaWeb: 'https://www.elbarco.com.co',
+    direccion: 'Cra. 14b #118-98',
+    geolocalizacion: [
+        {
+            latitud: 0.88888888888,
+            longitud: 1.88888888888
+        }
+    ],
+    telefonos: [
+        {
+            tipo: 'Administracion',
+            numero: '3153334455'
+        },
+        {
+            tipo: 'Reservaciones',
+            numero: '7502233'
+        }
+    ],
+    especialidades: [
+        {
+            nombre: 'Española',
+        },
+        {
+            nombre: 'Internacional'
+        }
+    ],
+    horarios: [
+        {
+            dia: 'lunes',
+            apertura: '12:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'martes',
+            apertura: '12:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'miercoles',
+            apertura: '08:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'jueves',
+            apertura: '08:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'viernes',
+            apertura: '08:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'sabado',
+            apertura: '08:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'domingo',
+            apertura: '08:00',
+            cierre: '23:59'
+        }
+    ],
+    personal: [
+        {
+            nombre: 'Redvers Escobar',
+            rol: 'Gerente General',
+            sueldo: 18000000,
+            telefono: '3167778899'
+        },
+        {
+            nombre: 'Paola Morales',
+            rol: 'Administradora',
+            sueldo: 12000000,
+            telefono: '3054443322'
+        },
+        {
+            nombre: 'Andrés García',
+            rol: 'Encargado',
+            sueldo: 1200000,
+            telefono: '3045556677'
+        },
+        {
+            nombre: 'Pedro Pérez',
+            rol: 'Mesero',
+            sueldo: 1200000,
+            telefono: '3167778899'
+        },
+        {
+            nombre: 'Gustavo Márquez',
+            rol: 'Mesero',
+            sueldo: 1200000,
+            telefono: '3239998800'
+        },
+        {
+            nombre: 'Carmen Sanabria',
+            rol: 'Chef',
+            sueldo: 5800000,
+            telefono: '3054445566'
+        },
+        {
+            nombre: 'Verónica González',
+            rol: 'Anfitriona',
+            sueldo: 1200000,
+            telefono: '3167772233'
+        }
+    ],
+    menu: {
+        platosPrincipales: [
+            {
+                nombre: 'Paella',
+                descripcion: 'Arroz con mariscos',
+                precio: 98000,
+                cantidadPersonas: 6
+            },
+            {
+                nombre: 'Cazuela de Mariscos',
+                descripcion: 'Exquisito caldo de mariscos',
+                precio: 123000,
+                cantidadPersonas: 1
+            },
+            {
+                nombre: 'Empanada Gallega',
+                descripcion: 'Exquisita plato de cocido de pollo marinado con galleta dulce',
+                precio: 45000,
+                cantidadPersonas: 1
+            }
+        ],
+        bebidas: [
+            {
+                nombre: 'Refresco Postobón Acqua',
+                tipo: 'Bebida no alcohólica',
+                presentacion: 'Vaso servido',
+                precio: 5000
+            },
+            {
+                nombre: 'Vino tinto',
+                tipo: 'Bebida alcohólica',
+                presentacion: 'Copa',
+                precio: 12000
+            },
+            {
+                nombre: 'Juago de naranja',
+                tipo: 'Jugo Natural',
+                presentacion: 'Vaso',
+                precio: 5000
+            },
+            {
+                nombre: 'Agua mineral sin gas',
+                tipo: 'Agua natutal',
+                presentacion: 'Botella de vidrio',
+                precio: 5000
+            }
+        ],
+        postres: [
+            {
+                nombre: 'Miloja',
+                tipo: 'Postre',
+                precio: 15000
+            },
+            {
+                nombre: 'Pie de Limon',
+                tipo: 'Postre Sin azucar',
+                precio: 16000
+            },
+            {
+                nombre: 'Leche asada',
+                tipo: 'Postre',
+                precio: 8000
+            },
+            {
+                nombre: 'Flan de Chocolate',
+                tipo: 'Sin azucar',
+                precio: 8900
+            }
+        ]
+    }
+})
+
+
+db.rest.insert({
+    nombre: 'Mc Donalds - Aeropuerto',
+    paginaWeb: 'https://www.md.com.co',
+    direccion: 'Aeropuerto Internacional EL Dorado',
+    geolocalizacion: [
+        {
+            latitud: 0.555,
+            longitud: 1.1232
+        }
+    ],
+    telefonos: [
+        {
+            tipo: 'Administracion',
+            numero: '2223311'
+        }
+    ],
+    especialidades: [
+        {
+            nombre: 'Comida Rapida',
+        }
+    ],
+    horarios: [
+        {
+            dia: 'lunes',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'martes',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'miercoles',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'jueves',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'viernes',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'sabado',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'domingo',
+            apertura: '08:00',
+            cierre: '23:59'
+        }
+    ],
+    personal: [
+        {
+            nombre: 'Francisco Gomez',
+            rol: 'Gerente General'
+        },
+        {
+            nombre: 'Brayan Morales',
+            rol: 'Promotor'
+        },
+        {
+            nombre: 'Julian García',
+            rol: 'Cruz',
+            sueldo: 1200000
+        }
+    ],
+    menu: {
+        platosPrincipales: [
+            {
+                nombre: 'Big Mac',
+                descripcion: 'Rica hamburguesa con papas y gaseosa',
+                precio: 25000
+            },
+            {
+                nombre: 'Menu del dia',
+                descripcion: 'Cada dia un nuevo menu',
+                precio: 12500
+            },
+            {
+                nombre: 'Cajita Feliz',
+                descripcion: 'Incluye juguete',
+                precio: 22000
+            },
+            {
+                nombre: 'Cuarto de Libra con Queso',
+                descripcion: 'Hamburguesa con queso',
+                precio: 14000
+            },
+            {
+                nombre: 'Mc Pollo',
+                descripcion: '5 ricas presas de pollo frito con papas y gaseosa',
+                precio: 22000
+            }
+        ],
+        bebidas: [
+            {
+                nombre: 'Gaseosa Grande Refill',
+                tipo: 'Bebida no alcohólica',
+                presentacion: 'Vaso servido',
+                precio: 7000
+            },
+            {
+                nombre: 'Juago de naranja',
+                tipo: 'Jugo Natural',
+                presentacion: 'Vaso',
+                precio: 5000
+            },
+            {
+                nombre: 'Agua con gas',
+                tipo: 'Agua',
+                presentacion: 'Botella de vidrio',
+                precio: 5000
+            }
+        ],
+        postres: [
+            {
+                nombre: 'Sunday',
+                tipo: 'Postre',
+                precio: 8000
+            },
+            {
+                nombre: 'Mc Flurry M&M',
+                tipo: 'Rico poste full calorías',
+                precio: 9000
+            },
+            {
+                nombre: 'Mc Coloso',
+                tipo: 'Postre',
+                precio: 4900
+            },
+            {
+                nombre: 'Pie de manzana',
+                tipo: 'Postre',
+                precio: 4900
+            }
+        ],
+        acompanamientos: [
+            {
+                nombre: 'Papas fritas',
+                precio: 7800
+            },
+            {
+                nombre: 'Salsa BBQ',
+                precio: 0
+            },
+            {
+                nombre: 'Tocineta extra',
+                precio: 3500
+            },
+            {
+                nombre: 'Salsa secreta Bic Mac',
+                precio: 1200
+            }
+        ]
+    }
+})
+
+db.rest.insert({
+    nombre: 'Pizza Hut',
+    paginaWeb: 'https://www.pizzahut.com.co',
+    direccion: 'Calle 116',
+    geolocalizacion: [
+        {
+            latitud: 0.666666,
+            longitud: 1.1111111
+        }
+    ],
+    telefonos: [
+        {
+            tipo: 'Domicilios',
+            numero: '7505050'
+        }
+    ],
+    especialidades: [
+        {
+            nombre: 'Pizzeria',
+        }
+    ],
+    horarios: [
+        {
+            dia: 'lunes',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'martes',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'miercoles',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'jueves',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'viernes',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'sabado',
+            apertura: '00:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'domingo',
+            apertura: '08:00',
+            cierre: '23:59'
+        }
+    ],
+    personal: [
+        {
+            nombre: 'Luis Granados',
+            rol: 'Gerente General'
+        },
+        {
+            nombre: 'Miguel Aranguren',
+            rol: 'Promotor'
+        },
+        {
+            nombre: 'Angelica Guerrero',
+            rol: 'Chef'
+        },
+        {
+            nombre: 'Monica Diaz',
+            rol: 'Promotos'
+        }
+    ],
+    menu: {
+        platosPrincipales: [
+            {
+                nombre: 'Pizza Napolitana',
+                descripcion: 'Pizza con salsa de la casa',
+                precio: 25000
+            },
+            {
+                nombre: 'Pizza Pollo Champinon',
+                descripcion: 'Pizza',
+                precio: 27800
+            },
+            {
+                nombre: 'Pizza Peperoni',
+                descripcion: 'Pizza con mucho peperoni',
+                precio: 32000
+            },
+            {
+                nombre: 'Pizza cuatro quesos',
+                descripcion: 'Pizza con queso parmesano, azul, manchego y queso especial',
+                precio: 50000
+            },
+            {
+                nombre: 'Pizza Hawayana',
+                descripcion: 'Deliciosa pizza con piña',
+                precio: 22000
+            }
+        ],
+        bebidas: [
+            {
+                nombre: 'Coca Cola 1 Lt',
+                tipo: 'Bebida en Botella',
+                presentacion: 'Botella',
+                precio: 7000
+            },
+            {
+                nombre: 'Postobon Manzana',
+                tipo: 'Bebida en Botella',
+                presentacion: 'Botella',
+                precio: 5000
+            }
+        ],
+        postres: [
+            {
+                nombre: 'Pizza Sticks',
+                tipo: 'Postre',
+                precio: 8000
+            }
+        ]
+    }
+})
+
+db.rest.insert({
+    nombre: 'La nueva polombia',
+    paginaWeb: 'https://www.lapolombianada.com.co',
+    direccion: 'Cra. 45b #18-98',
+    geolocalizacion: [
+        {
+            latitud: -74.88888888888,
+            longitud: 4.88888888888
+        }
+    ],
+    telefonos: [
+        {
+            tipo: 'Administracion',
+            numero: '3193566191'
+        },
+        {
+            tipo: 'Reservaciones',
+            numero: '7239123'
+        }
+    ],
+    especialidades: [
+        {
+            nombre: 'Platos tipicos'
+        },
+        {
+            nombre: 'Sopas de la abuela'
+        }
+    ],
+    horarios: [
+        {
+            dia: 'lunes',
+            apertura: '10:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'martes',
+            apertura: '10:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'miercoles',
+            apertura: '12:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'jueves',
+            apertura: '12:00',
+            cierre: '18:00'
+        },
+        {
+            dia: 'viernes',
+            apertura: '07:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'sabado',
+            apertura: '12:00',
+            cierre: '23:59'
+        },
+        {
+            dia: 'domingo',
+            apertura: '08:00',
+            cierre: '23:59'
+        }
+    ],
+    personal: [
+        {
+            nombre: 'Caludia Niño',
+            rol: 'Gerente General',
+            sueldo: 18500000,
+            telefono: '3144629718'
+        },
+        {
+            nombre: 'Estefanny Castillo',
+            rol: 'Administradora',
+            sueldo: 10000000,
+            telefono: '3218473640'
+        },
+        {
+            nombre: 'Estiven Gomez',
+            rol: 'Encargado',
+            sueldo: 1800000,
+            telefono: '3045556677'
+        },
+        {
+            nombre: 'Camila Martinez',
+            rol: 'Mesero',
+            sueldo: 1200000,
+            telefono: '3167778899'
+        },
+        {
+            nombre: 'Andres Mendez',
+            rol: 'Mesero',
+            sueldo: 1200000,
+            telefono: '3239998800'
+        },
+        {
+            nombre: 'Rodolfo Santorini',
+            rol: 'Chef',
+            sueldo: 5800000,
+            telefono: '3054445566'
+        },
+        {
+            nombre: 'Anastasia Lopez',
+            rol: 'Anfitriona',
+            sueldo: 1200000,
+            telefono: '3167772233'
+        }
+    ],
+  menu: {
+    platosPrincipales: [
+      {
+        nombre: 'Bandeja Paisa',
+        descripcion: 'Delicioso plato con frijoles, arroz,chicharron,arepa,platano,carne molida, chorizo y mucho mas',
+        precio: 15000,
+        cantidadPersonas: 1
+      },
+      {
+        nombre: 'Sancocho',
+        descripcion: 'Riquisima sopa tradicional con pollo',
+        precio: 123000,
+        cantidadPersonas: 1
+      },
+      {
+        nombre: 'Cocido boyacense',
+        descripcion: 'Mezcla de papa, cubios etc',
+        precio: 45000,
+        cantidadPersonas: 1
+      }
+    ],
+    bebidas: [
+      {
+        nombre: 'Jugos Naturales',
+        tipo: 'Bebida no alcohólica',
+        presentacion: 'Vaso 12 onz',
+        precio: 5000
+      },
+      {
+        nombre: 'Cerveza corona',
+        tipo: 'Bebida alcohólica',
+        presentacion: 'vaso',
+        precio: 12000
+      },
+      {
+        nombre: 'Coca-cola',
+        tipo: 'Jugo Natural',
+        presentacion: 'Vaso',
+        precio: 5000
+      },
+      {
+        nombre: 'Michelada',
+        tipo: 'bebida alcoholica',
+        presentacion: 'vaso de vidrio',
+        precio: 5000
+      }
+    ],
+    postres: [
+      {
+        nombre: 'Pudin',
+        tipo: 'Postre',
+        precio: 12000
+      },
+      {
+        nombre: 'torta de chocolate',
+        tipo: 'Postre Sin azucar',
+        precio: 16000
+      },
+      {
+        nombre: 'Arroz con leche',
+        tipo: 'Postre',
+        precio: 8000
+      },
+      {
+        nombre: 'Cocadas',
+        tipo: 'postre',
+        precio: 8900
+      }
+    ]
+  }
+})
+
+consultas:
+db.rest.find({nombre: 'Pizza Hut'},{nombre:1, _id:0})
+db.rest.find({nombre: /onal/},{nombre:1, direccion:1, telefonos:1 _id:0})
+db.rest.find({"especialidad.nombre": /ipica/}, {nombre:1, especialidades:1, direccion:1, telefonos:1 _id:0})
+db.rest.find({"menu.platosPrincipales.nombre": /libra/},{nombre:1, direccion:1, telefonos:1 _id:0,"menu.platosPrincipales.nombre":1 }
+
+No puede lograr la suma de precios por restaurant.
